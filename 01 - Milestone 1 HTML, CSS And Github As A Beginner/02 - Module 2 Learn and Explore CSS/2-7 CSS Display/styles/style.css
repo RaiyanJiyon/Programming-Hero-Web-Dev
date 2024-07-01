@@ -1,0 +1,22 @@
+.blog {
+    background-color: aqua;
+    color: rgb(61, 65, 56);
+    border: 2px solid yellow;
+    margin: 10px;
+    padding: 20px;
+}
+
+.sit {
+    background-color: red;
+    border: 2px solid black;
+    display: block;
+    height: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+ul {
+    /* display: none; */
+    /* visibility: hidden; */
+    display: inline;
+}
