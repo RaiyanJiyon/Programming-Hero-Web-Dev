@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading1 {
+            color: aqua;
+            background-color: hotpink;
+        }
+
+        .headclass {
+            color: greenyellow;
+        }
+
+        .classpara {
+            background-color: rebeccapurple;
+        }
+
+        div {
+            background-color: rgb(183, 120, 38);
+            width: 300px;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading1">Heading 1</h1>
+    <h2 class="headclass">Heading 2</h2>
+    <h3 id="heading3">Heading 3</h3>
+
+    <p class="classpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quae!</p>
+    <p class="classpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quae!</p>
+
+    <div>
+        <h1>Div Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illo sit obcaecati autem optio in.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur <span class="red">Lorem ipsum dolor sit amet.</span>adipisicing elit. Unde a similique, suscipit dolore aliquid repudiandae fugiat omnis. Quisquam eius voluptas architecto doloribus.</p>
+</body>
+</html>
