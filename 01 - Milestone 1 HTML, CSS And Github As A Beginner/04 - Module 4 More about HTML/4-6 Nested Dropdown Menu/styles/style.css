@@ -1,0 +1,58 @@
+/* home page style */
+nav > ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    background-color: hotpink;
+}
+
+/* form page style */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* table page style */
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* blog page style */
+img {
+    width: 100%;
+}
+
+/* video page style */
+video {
+    width: 350px;
+    height: 280px;
+}
+
+/* Nested Dropdown Menu style  */
+nav li .dropdown{
+    display: none;
+    position: absolute;
+    background-color: lightyellow;
+    padding-left: 10px;
+}
+
+nav li:hover > .dropdown {
+    display: block;
+}
