@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form action="">
+          <label for="id">
+            ID:
+            <input type="number" name="id" id="id" placeholder="Enter ID" />
+          </label>
+          <label for="name">
+            Name:
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </label>
+          <label for="email">
+            Email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </label>
+
+          <fieldset>
+            <legend>Choose Section</legend>
+            <label for="A"> <input type="radio" name="A" id="A" />A </label>
+            <label for="B"> <input type="radio" name="B" id="B" />B </label>
+            <label for="C"> <input type="radio" name="C" id="C" />C </label>
+            <label for="D"> <input type="radio" name="D" id="D" />D </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose Course</legend>
+            <label for="cse101">
+              <input type="checkbox" name="cse101" id="cse101" />C Programming
+            </label>
+            <label for="cse103">
+              <input type="checkbox" name="cse103" id="cse103" />Java
+              Programming
+            </label>
+            <label for="cse105">
+              <input type="checkbox" name="cse105" id="cse105" />Python
+              Programming
+            </label>
+            <label for="cse107">
+              <input type="checkbox" name="cse107" id="cse107" />C# Programming
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
