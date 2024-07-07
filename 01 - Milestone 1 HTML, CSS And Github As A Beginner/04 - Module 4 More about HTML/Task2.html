@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 520px;
+            margin: auto 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        form textarea {
+            width: 100%;
+        }
+
+        .buttons input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h2>Story Telling Section</h2>
+        <fieldset>
+            <legend>Story Details</legend>
+            <form action="">
+                <label for="Title">
+                    Title
+                    <input type="text" name="Title" id="Title" required>
+                </label>
+                <label for="Author">
+                    Author
+                    <input type="text" name="Author" id="Author" required>
+                </label>
+                <label for="Genre">
+                    Genre
+                    <select name="Genre" id="Genre" required>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                    </select>
+                </label>
+                <label for="Rate">
+                    Rate
+                    <select name="rate" id="rate" required>
+                        <option value="Good">Good</option>
+                        <option value="Bad">Bad</option>
+                        <option value="Average">Average</option>
+                        <option value="Excellent">Excellent</option>
+                    </select>
+                </label>
+            </fieldset>
+            <label for="Feedback">Feedback</label>
+            <textarea name="Feedback" id="Feedback" cols="30" rows="10"></textarea>
+            <div class="buttons">
+                <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

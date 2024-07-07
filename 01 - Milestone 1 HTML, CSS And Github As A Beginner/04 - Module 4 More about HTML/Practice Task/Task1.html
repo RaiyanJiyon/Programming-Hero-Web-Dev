@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-section {
+            margin: 10px;
+        }
+
+        .image-section img{
+            width: 300px;
+        }
+
+        .link {
+            margin: 10px;
+        }
+
+        .horizontal {
+            margin-top: 10px;
+        }
+        .feedback-section {
+            margin-top: 10px;
+        }
+
+        .feedback-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback-section h3, label {
+            display: block;
+            margin: 10px;
+        }
+
+        .feedback-section textarea {
+            margin-bottom: 20px;
+        }
+
+        .feedback-section input[type="submit"] {
+            align-self: flex-start;
+        }
+
+        .feedback-section input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="search-section">
+            <form action="">
+                <label for="search">
+                    Search Your Image Here
+                    <input type="search" name="search" id="search" placeholder="Kung Fu Panda">
+                    <button>Search</button>
+                </label>
+            </form>
+        </section>
+
+        <section class="image-section">
+            <figure>
+                <img src="Image/Kunfu Panda.png" alt="Kung Fu Panda">
+            </figure>
+        </section>
+        
+        <a class="link" href="http://google.com">For more click here</a>
+
+        <hr class="horizontal">
+
+        <section class="feedback-section">
+            <h3>Feedback Form</h3>
+            <form action="">
+                <label for="name">
+                    Name:
+                    <input type="text" name="name" id="name">
+                </label>
+                <label for="date">
+                    Date:
+                    <input type="date" name="date" id="date">
+                </label>
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
