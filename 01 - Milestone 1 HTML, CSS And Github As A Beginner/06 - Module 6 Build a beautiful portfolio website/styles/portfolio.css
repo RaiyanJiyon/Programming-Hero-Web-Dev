@@ -15,6 +15,10 @@
     color: #FD6E0A;
 }
 
+.dark-1 {
+    color: #181818;
+}
+
 .dark-2 {
     color: #474747;
 }
@@ -26,6 +30,13 @@
     font-weight: bold;
     padding: 18px 16px;
     border-radius: 5px;
+    border: none;
+}
+/* header style */
+.header {
+    background-image: url("../images/developer.png"), url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right ;
 }
 
 /* navbar style */
@@ -54,4 +65,28 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 20px;
+}
+
+/* banner styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 230px;
+}
+
+.banner-content {
+    max-width: 585px;
+}
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;   
+}
+
+.banner-profile-pic {
+    width: 584px;
 }
