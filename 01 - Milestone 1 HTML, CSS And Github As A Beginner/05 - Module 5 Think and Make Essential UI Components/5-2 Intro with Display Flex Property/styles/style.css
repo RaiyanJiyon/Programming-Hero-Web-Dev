@@ -1,0 +1,13 @@
+.parent {
+    background-color: antiquewhite;
+    padding: 25px;
+    display: flex;
+}
+
+.child {
+    background-color: aqua;
+    border: 2px solid saddlebrown;
+    padding: 20px;
+    margin: 10px 0;
+    /* display: inline; */
+}
