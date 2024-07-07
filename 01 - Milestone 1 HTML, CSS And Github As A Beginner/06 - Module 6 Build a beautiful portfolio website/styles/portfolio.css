@@ -191,3 +191,26 @@ main section {
 }
 
 /* main style end */
+
+/* footer style start */
+footer {
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+footer input[type="text"], footer input[type="email"], footer textarea {
+    width: 461px;
+    height: 64px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+}
+/* footer style end */
