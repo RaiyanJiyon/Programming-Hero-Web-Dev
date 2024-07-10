@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z index</title>
+    <style>
+        .box1 {
+            border: 2px solid hotpink;
+            background-color: hotpink;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            
+        }
+        .box2 {
+            border: 2px solid aqua;
+            background-color: aqua;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 20px;
+            left: 400px;
+            /* z-index: 1; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>Box - 1</h1>
+    </div>
+    <div class="box2">
+        <h1>Box - 2</h1>
+    </div>
+</body>
+</html>

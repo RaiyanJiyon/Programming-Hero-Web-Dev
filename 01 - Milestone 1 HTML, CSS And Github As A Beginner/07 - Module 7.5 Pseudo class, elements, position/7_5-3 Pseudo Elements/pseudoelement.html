@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements in CSS</title>
+    <style>
+        p::before {
+            content: 'Hello ';
+            color: red;
+        }
+
+        p::after {
+            content: ' Hi';
+            color: blueviolet;
+        }
+
+        p::selection {
+            color: aqua;
+        }
+
+        input::placeholder {
+            color: red;
+        }
+
+        h1::first-letter {
+            color: hotpink;
+        }
+
+        h2::first-line {
+            color: burlywood;
+        }
+
+        li::marker {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et explicabo quisquam a quis dolor, eos nihil praesentium labore cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et explicabo quisquam a quis dolor, eos nihil praesentium labore cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et explicabo quisquam a quis dolor, eos nihil praesentium labore cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et explicabo quisquam a quis dolor, eos nihil praesentium labore cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint et explicabo quisquam a quis dolor, eos nihil praesentium labore cupiditate.</p>
+
+    <input type="text" name="" id="" placeholder="Enter name">
+    
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <ul>
+        <li>list - 1</li>
+        <li>list - 2</li>
+        <li>list - 3</li>
+        <li>list - 4</li>
+        <li>list - 5</li>
+    </ul>
+</body>
+</html>
