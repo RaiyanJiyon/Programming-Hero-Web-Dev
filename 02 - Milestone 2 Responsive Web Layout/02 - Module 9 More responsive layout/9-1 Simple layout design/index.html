@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple layout design</title>
+    <style>
+        .container-1 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            margin: 20px;
+        }
+        .box {
+            width: 500px;
+            height: 300px;
+ 
+            background-color: olivedrab;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container-2 {
+            border: 2px solid yellowgreen;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .item {
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid hotpink;
+            text-align: center;
+        }
+
+        /* small device */
+        @media screen and (max-width: 576px) {
+            .container-1 {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="box">
+            <h1>box - 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel reprehenderit aliquid, illum voluptates dolor maiores sit odit officiis laboriosam, modi iste beatae. Vero voluptatibus, aut omnis amet debitis totam.</p>
+        </div>
+        <div class="box">
+            <h1>box - 2</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque necessitatibus reprehenderit velit blanditiis aspernatur provident voluptatum ipsam est veniam, molestias fugiat, architecto nemo ratione at dolor quidem a! Soluta, dolor.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="item">item - 1</div>
+        <div class="item">item - 2</div>
+        <div class="item">item - 3</div>
+        <div class="item">item - 4</div>
+        <div class="item">item - 5</div>
+        <div class="item">item - 6</div>
+        <div class="item">item - 7</div>
+        <div class="item">item - 8</div>
+        <div class="item">item - 9</div>
+        <div class="item">item - 10</div>
+    </div>
+</body>
+</html>
