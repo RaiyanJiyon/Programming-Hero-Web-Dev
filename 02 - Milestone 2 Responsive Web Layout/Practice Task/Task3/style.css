@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+    .image img {
+        object-position: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image img {
+        object-position: right;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .image img {
+        object-position: top;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .image img {
+        object-position: center;
+    }
+}
