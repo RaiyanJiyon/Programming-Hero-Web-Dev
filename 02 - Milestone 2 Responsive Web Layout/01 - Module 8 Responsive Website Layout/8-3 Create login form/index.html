@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      nav div {
+        display: flex;
+        /* justify-content: space-evenly; */
+        gap: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(201, 26, 113);
+      }
+
+      .form-container {
+        /* border: 2px solid aqua; */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        /* border: 2px solid greenyellow; */
+        width: 50%;
+      }
+
+      form input {
+        margin-bottom: 20px;
+        height: 40px;
+        /* margin: 50%; */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Post</a>
+        <a href="#">Work</a>
+        <div>
+          <a href="#">Login</a>
+          <a href="#">Logout</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <form action="">
+                <h3>Fill Up The Form</h3>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+  </body>
+</html>

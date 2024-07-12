@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid layout</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 300px;
+            border: 2px solid red;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 200px 100px 200px; */
+            /* grid-template-columns: repeat(2, 200px); */
+            /* grid-template-columns: repeat(4, auto); */
+            grid-template-columns: 100px 200px 1fr;
+            /* grid-template-rows: 100px auto; */
+            /* grid-gap: 10px; */
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .item {
+            /* width: 200px; */
+            /* height: 100px; */
+            border: 2px solid rebeccapurple;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+    </div>
+</body>
+</html>

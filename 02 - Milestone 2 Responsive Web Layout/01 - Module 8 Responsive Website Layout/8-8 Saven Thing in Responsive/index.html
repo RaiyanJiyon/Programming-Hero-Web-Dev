@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Things in Responsive</title>
+  </head>
+  <style>
+    body {
+        font-size: 10px;
+        max-width: 1250px;
+        height: 100vh;
+        border: 1px solid skyblue;
+        margin: 0 auto;
+    }
+    li {
+        font-size: 2rem;
+    }
+    .image {
+        display: flex;
+        gap: 20px;
+    }
+
+    .img-1 {
+        width: 50%;
+    }
+    .img-2 {
+        width: 50%;
+    }
+    .img-1 img {
+        width: 100%;
+    }
+    .img-2 img{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 575px) {
+        .image {
+            flex-direction: column;
+        }
+
+        .img-1 {
+            width: 100%;
+        }
+
+        .img-2 {
+            width: 100%;
+        }
+    }
+
+  </style>
+  <body>
+    <header>
+      <h1>Seven Things for CSS Responsive</h1>
+      <ol>
+        <li>Viewport Meta Tag</li>
+        <li>CSS Relative Unit</li>
+        <li>Body max width and horizontal center align</li>
+        <li>image fluid</li>
+        <li>two column flex and use media query with flex direction column</li>
+        <li>menu Responsive will need JavaScript</li>
+      </ol>
+    </header>
+    <main>
+        <div class="image">
+
+            <div class="img-1">
+                <img src="../8-6 Explore Basic Responsiveness/image/MediterraneanDiet.jpg" alt="">
+            </div>
+            
+            <div class="img-2">
+                <img src="image/tiger.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
