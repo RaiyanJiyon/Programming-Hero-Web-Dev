@@ -24,3 +24,23 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .row {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .square-collage {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* medium screen */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row {
+        height: auto;
+        flex-direction: column;
+    }
+}
