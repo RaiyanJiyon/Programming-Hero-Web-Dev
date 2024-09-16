@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <button id="btn1">Click Me 1</button>
+    <button id="btn2">Click Me 2</button>
+    <button id="btn3">Click Me 3</button>
+    <button id="btn4">Click Me 4</button>
+    <button id="btn5">Click Me 5</button>
+    <button id="btn6">Click Me 6</button>
+    <button id="btn7">Click Me 7</button>
+
+    <script>
+        const button1 = document.getElementById('btn1');
+        const button2 = document.getElementById('btn2');
+        const button3 = document.getElementById('btn3');
+        const button4 = document.getElementById('btn4');
+        const button5 = document.getElementById('btn5');
+        const button6 = document.getElementById('btn6');
+        const button7 = document.getElementById('btn7');
+
+        button1.addEventListener('click', () => {
+            console.log('Mouse click');
+        });
+
+        button2.addEventListener('dblclick', () => {
+            console.log('Mouse Double Click');
+        });
+
+        button3.addEventListener('mousedown', () => {
+            console.log('Mouse Down');
+        });
+
+        button4.addEventListener('mouseup', () => {
+            console.log('Mouse Up');
+        });
+
+        button5.addEventListener('mousemove', () => {
+            console.log('Mouse Move');
+        });
+
+        button6.addEventListener('mouseover', () => {
+            console.log('Mouse Over');
+        });
+
+        button6.addEventListener('mouseout', () => {
+            console.log('Mouse Out');
+        });
+    </script>
+</body>
+</html>

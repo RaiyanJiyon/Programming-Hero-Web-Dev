@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+</head>
+<body>
+    <h1>Explore Event Delegate</h1>
+
+    <ul id="listItem">
+        <li class="item">Lorem, ipsum dolor 1.</li>
+        <li class="item">Lorem, ipsum dolor 2.</li>
+        <li class="item">Lorem, ipsum dolor 3.</li>
+        <li class="item">Lorem, ipsum dolor 4.</li>
+        <li class="item">Lorem, ipsum dolor 5.</li>
+        <li class="item">Lorem, ipsum dolor 6.</li>
+    </ul>
+
+    <button id="addButton">Add Item</button>
+
+    <script>
+        // const items = document.querySelectorAll('.item');
+        // for (const item of items) {
+        //     item.addEventListener('click', (event) => {
+        //         event.target.parentNode.removeChild(event.target);
+        //     });
+        // }
+
+        document.getElementById('listItem').addEventListener('click', (event) => {
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        const addButton = document.getElementById('addButton');
+        addButton.addEventListener('click', (event) => {
+            const listItem = document.getElementById('listItem');
+            const newItem = document.createElement('li');
+            newItem.classList.add('item');
+            newItem.textContent = 'New Item Added';
+            listItem.appendChild(newItem);
+        })
+
+    </script>
+</body>
+</html>
