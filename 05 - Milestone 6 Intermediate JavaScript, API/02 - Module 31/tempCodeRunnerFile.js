@@ -1,0 +1,1 @@
+console.log(data.Sophia.study[1].secondary[1]);
