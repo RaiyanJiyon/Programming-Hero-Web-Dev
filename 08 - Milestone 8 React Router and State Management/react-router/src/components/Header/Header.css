@@ -1,0 +1,8 @@
+nav a {
+    margin-right: 10px;
+}
+
+nav a.active {
+    background-color: gray;
+    color: white;
+}
